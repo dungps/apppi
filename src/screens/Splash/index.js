@@ -17,9 +17,14 @@ class Splash extends Component {
 
     componentDidMount = () => {
         const { navigation, user } = this.props;
-
-        TimerMixin.setTimeout(() => {
-            navigation.navigate((user && user.logged) ? 'main' : 'login');
+        let screen = 'login';
+        
+        if (user && user.logged) {
+            screen = 'main';   
+        }
+        
+        setTimeout(() => {
+            navigation.navigate(screen);
         }, 2000);
     }
     
