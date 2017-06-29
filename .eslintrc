@@ -1,0 +1,11 @@
+{
+    "extends": "rallycoding",
+    "rules": {
+        "import/no-extraneous-dependencies" : "warn",
+        "import/no-unresolved" : "warn",
+        "prefer-const" :"warn",
+        "arrow-body-style": "off",
+        "global-require": "off",
+        "no-fallthrough": "off"
+    }
+}
